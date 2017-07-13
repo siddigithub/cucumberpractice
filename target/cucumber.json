@@ -1,0 +1,114 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4196295168,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "login to the application",
+        "description": "",
+        "id": "login-to-application;login-to-the-application",
+        "after": [
+          {
+            "result": {
+              "duration": 43860551,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1131017281,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "Loginstep.iNavigateToTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 163093661,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 5,
+                "value": "#And I enter the username as \"admin\" and password as \"admin\""
+              }
+            ],
+            "line": 6,
+            "name": "I enter the details",
+            "match": {
+              "location": "Loginstep.iEnterTheDetails(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "admin",
+                  "adminpassword"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72363746,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on login button",
+            "match": {
+              "location": "Loginstep.iClickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 319247750,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see the userform page",
+            "match": {
+              "location": "Loginstep.iShouldSeeTheUserformPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login to application",
+    "description": "login and logout",
+    "id": "login-to-application",
+    "keyword": "Feature",
+    "uri": "login.feature"
+  }
+]
